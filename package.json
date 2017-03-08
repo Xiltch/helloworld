@@ -1,0 +1,16 @@
+{
+  "name": "helloworld",
+  "version": "0.0.0",
+  "description": "Hello World Electron app",
+  "scripts": {
+    "build": "npm run build:dev",
+    "build:dev":"webpack --progress --profile",
+    "electron": "electron src/app"
+  },
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "author": "Jonathan Tweedle",
+  "license": "MIT"
+}
