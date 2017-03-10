@@ -11,6 +11,8 @@
     "angular"
   ],
   "scripts": {
+    "start": "concurrent \"npm run watch:dev\" \"npm run lite\" ",
+    "lite": "lite-server -c=bs-config.json",    
     "build": "npm run build:dev",
     "build:dev": "webpack --progress --profile",
     "watch": "npm run watch:dev",
@@ -36,6 +38,8 @@
     "zone.js": "^0.7.7"
   },
   "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.1.0",
     "@types/hammerjs": "^2.0.33",
     "@types/jasmine": "^2.2.34",
     "@types/moment-timezone": "^0.2.32",
